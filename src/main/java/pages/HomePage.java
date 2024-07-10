@@ -19,7 +19,7 @@ public class HomePage {
 		elementutils = new ElementUtils(driver);
 	}
 	
-	@FindBy(xpath = "//span[text() = 'My Account']")
+	@FindBy(xpath = "//a[@title='My Account']")
 	private WebElement myAccountDropdown;
 	
 	
