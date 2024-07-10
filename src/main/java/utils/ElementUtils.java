@@ -35,8 +35,13 @@ public class ElementUtils {
 	}
 	
 	public void clickOnElement(WebElement element, long durationInSeconds) {
+		if(element != null)
+		{
 		WebElement webElement= waitForElement(element, durationInSeconds);
 		webElement.click();
+		}else {
+			System.out.println("Element not found");
+		}
 	}
 	
 	

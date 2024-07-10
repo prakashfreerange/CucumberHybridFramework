@@ -38,7 +38,7 @@ public class HomePage {
 	
 	
 	public void clickOnMyAccount() {
-		elementutils.clickOnElement(myAccountDropdown, 15);
+		elementutils.clickOnElement(myAccountDropdown, 30);
 	}
 	
 	public LoginPage selectLoginOption() {
