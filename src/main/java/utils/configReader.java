@@ -6,12 +6,17 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class configReader {
+	
+	static Properties prop = new Properties();
+
+	
 	public static Properties intializeProperties(){
-		Properties prop = new Properties();
-		File propertyFile = new File(System.getProperty("user.dir"+"//src//test//resources//config//config.properties"));
-			
+		
+		
+		File propFile = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\config\\config.properties");
+		
 		try {
-			FileInputStream fis = new FileInputStream(propertyFile);	
+			FileInputStream fis = new FileInputStream(propFile);	
 			prop.load(fis);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -20,7 +25,5 @@ public class configReader {
 		
 		return prop;
 	}
-	
-	
 
 }
